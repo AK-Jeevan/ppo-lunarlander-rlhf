@@ -1,0 +1,60 @@
+Using cpu device
+Logging to ./logs\tensorboard\PPO_1
+C:\Users\akjee\Documents\AI\RL & RLHF\RLHF\Lib\site-packages\stable_baselines3\common\callbacks.py:419: UserWarning: Training and eval env are not of the same type<stable_baselines3.common.vec_env.subproc_vec_env.SubprocVecEnv object at 0x000002560B543410> != <stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x0000025616406950>
+  warnings.warn("Training and eval env are not of the same type" f"{self.training_env} != {self.eval_env}")
+[2K---------------------------------━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8,128/20,000 [0m [ [33m0:00:20[0m < [36m0:00:31[0m , [31m394 it/s[0m ]
+| rollout/           |          |
+|    ep_len_mean     | 90.2     |
+|    ep_rew_mean     | -184     |
+| time/              |          |
+|    fps             | 387      |
+|    iterations      | 1        |
+|    time_elapsed    | 21       |
+|    total_timesteps | 8192     |
+---------------------------------
+[2K------------------------------------------━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━[0m [32m16,288/20,000 [0m [ [33m0:00:38[0m < [36m0:00:07[0m , [31m609 it/s[0m ]
+| rollout/                |              |
+|    ep_len_mean          | 91.3         |
+|    ep_rew_mean          | -162         |
+| time/                   |              |
+|    fps                  | 424          |
+|    iterations           | 2            |
+|    time_elapsed         | 38           |
+|    total_timesteps      | 16384        |
+| train/                  |              |
+|    approx_kl            | 0.0057489537 |
+|    clip_fraction        | 0.0178       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.38        |
+|    explained_variance   | 0.000303     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 3.46e+03     |
+|    n_updates            | 4            |
+|    policy_gradient_loss | -0.00399     |
+|    value_loss           | 6.08e+03     |
+------------------------------------------
+[2K------------------------------------------━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m24,144/20,000 [0m [ [33m0:00:42[0m < [36m0:00:00[0m , [31m750 it/s[0m ][36m0:00:01[0m , [31m647 it/s[0m ]
+| rollout/                |              |
+|    ep_len_mean          | 95.3         |
+|    ep_rew_mean          | -148         |
+| time/                   |              |
+|    fps                  | 555          |
+|    iterations           | 3            |
+|    time_elapsed         | 44           |
+|    total_timesteps      | 24576        |
+| train/                  |              |
+|    approx_kl            | 0.0046884986 |
+|    clip_fraction        | 0.0132       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -1.37        |
+|    explained_variance   | -0.00654     |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.51e+03     |
+|    n_updates            | 8            |
+|    policy_gradient_loss | -0.00493     |
+|    value_loss           | 4.28e+03     |
+------------------------------------------
+[2K[1;34mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.━━━[0m [32m24,416/20,000 [0m [ [33m0:00:42[0m < [36m0:00:00[0m , [31m757 it/s[0m ]
+[2K[35m 100%[0m [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m24,576/20,000 [0m [ [33m0:00:42[0m < [36m0:00:00[0m , [31m676 it/s[0m ]
+[?25h[train] Final model saved to ./models\final_model.zip
+[train] Best model (by eval reward) saved to ./checkpoints\best_model

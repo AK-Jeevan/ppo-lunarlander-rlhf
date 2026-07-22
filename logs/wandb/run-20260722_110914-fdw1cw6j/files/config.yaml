@@ -1,0 +1,73 @@
+_wandb:
+    value:
+        cli_version: 0.28.1
+        e:
+            pa6qm0zm9l8wf4n8160w0ri117jmqga8:
+                codePath: RL & RLHF\PPO_Project\train.py
+                codePathLocal: train.py
+                cpu_count: 8
+                cpu_count_logical: 12
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "510815891456"
+                        used: "388645933056"
+                email: ak.jeevan06@gmail.com
+                executable: C:\Users\akjee\Documents\AI\RL & RLHF\RLHF\Scripts\python.exe
+                git:
+                    remote: https://github.com/AK-Jeevan/AI.git
+                gpu: NVIDIA GeForce RTX 2050
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2048
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 2050
+                      uuid: GPU-cb3ae640-7eec-7087-9f74-e3bb5331bca6
+                host: WOD-LLDD
+                memory:
+                    total: "16802910208"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\akjee\Documents\AI\RL & RLHF\PPO_Project\train.py
+                python: CPython 3.11.9
+                root: ./logs
+                startedAt: "2026-07-22T05:39:14.737163Z"
+                writerId: pa6qm0zm9l8wf4n8160w0ri117jmqga8
+        m: []
+        python_version: 3.11.9
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 16
+                - 35
+            "4": 3.11.9
+            "5": 0.28.1
+            "8":
+                - 3
+            "12": 0.28.1
+            "13": windows-amd64
+batch_size:
+    value: 64
+clip_range:
+    value: 0.2
+ent_coef:
+    value: 0.01
+env:
+    value: LunarLander-v2
+gae_lambda:
+    value: 0.98
+gamma:
+    value: 0.999
+learning_rate:
+    value: 0.0003
+n_epochs:
+    value: 4
+n_steps:
+    value: 1024
+seed:
+    value: 42
+total_timesteps:
+    value: 20000

@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 328, in _recv_bytes
+    nread, err = ov.GetOverlappedResult(True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\akjee\Documents\AI\RL & RLHF\PPO_Project\train.py", line 125, in <module>
+    main()
+  File "C:\Users\akjee\Documents\AI\RL & RLHF\PPO_Project\train.py", line 99, in main
+    vec_env = build_vec_env()
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\akjee\Documents\AI\RL & RLHF\PPO_Project\train.py", line 33, in build_vec_env
+    return SubprocVecEnv(env_fns)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akjee\Documents\AI\RL & RLHF\RLHF\Lib\site-packages\stable_baselines3\common\vec_env\subproc_vec_env.py", line 127, in __init__
+    observation_space, action_space = self.remotes[0].recv()
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 250, in recv
+    buf = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\multiprocessing\connection.py", line 337, in _recv_bytes
+    raise EOFError
+EOFError

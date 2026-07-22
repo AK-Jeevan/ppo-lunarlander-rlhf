@@ -1,0 +1,63 @@
+# WandB Sweep config for PPO on LunarLander-v3
+#
+# Usage:
+#   wandb sweep sweep.yaml
+#   wandb agent <SWEEP_ID_PRINTED_ABOVE>
+#
+# Each run trains with a different sampled combination of hyperparameters
+# and logs eval/mean_reward (from EvalCallback, synced via
+# sync_tensorboard=True) back to WandB, which is what this sweep optimizes.
+
+program: train_sweep.py
+method: bayes          # bayes = smarter than grid/random, good for expensive RL runs
+
+metric:
+  name: eval/mean_reward
+  goal: maximize
+
+parameters:
+  learning_rate:
+    distribution: log_uniform_values
+    min: 0.00001
+    max: 0.001
+
+  clip_range:
+    distribution: uniform
+    min: 0.1
+    max: 0.3
+
+  gae_lambda:
+    distribution: uniform
+    min: 0.90
+    max: 0.99
+
+  gamma:
+    distribution: uniform
+    min: 0.98
+    max: 0.999
+
+  ent_coef:
+    distribution: log_uniform_values
+    min: 0.0001
+    max: 0.05
+
+  n_steps:
+    values: [512, 1024, 2048]
+
+  batch_size:
+    values: [32, 64, 128]
+
+  n_epochs:
+    values: [4, 6, 10]
+
+# Kill clearly underperforming runs early instead of letting them burn
+# through the full training budget — important since RL training is slow.
+early_terminate:
+  type: hyperband
+  min_iter: 3
+  eta: 2
+
+command:
+  - ${env}
+  - ${interpreter}
+  - ${program}

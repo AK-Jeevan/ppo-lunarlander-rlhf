@@ -1,0 +1,33 @@
+{"time":"2026-07-22T11:12:22.8595238+05:30","level":"INFO","msg":"wandb-core"}
+{"time":"2026-07-22T11:12:22.8595238+05:30","level":"INFO","msg":"stream: starting","core version":"0.28.1"}
+{"time":"2026-07-22T11:12:24.7972983+05:30","level":"INFO","msg":"stream: created new stream","id":"d7akchak"}
+{"time":"2026-07-22T11:12:24.7972983+05:30","level":"INFO","msg":"handler: started"}
+{"time":"2026-07-22T11:12:24.8010757+05:30","level":"INFO","msg":"stream: started"}
+{"time":"2026-07-22T11:12:24.8010757+05:30","level":"INFO","msg":"writer: started","stream_id":"d7akchak"}
+{"time":"2026-07-22T11:12:24.8017692+05:30","level":"INFO","msg":"sender: started"}
+{"time":"2026-07-22T11:12:32.2896505+05:30","level":"INFO","msg":"filestream: sending request","total_files":0,"uploaded_len":1}
+{"time":"2026-07-22T11:12:33.0226262+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:12:47.2905647+05:30","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":0,"events_lines":2,"console_offset":0,"console_lines":1,"uploaded_len":1}
+{"time":"2026-07-22T11:12:47.96927+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:13:02.2922214+05:30","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":2,"events_lines":2,"console_offset":1,"console_lines":4}
+{"time":"2026-07-22T11:13:02.9243296+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:13:05.7559557+05:30","level":"WARN","msg":"tensorboard: no root directory","error":"timed out after 10s"}
+{"time":"2026-07-22T11:13:05.7559557+05:30","level":"INFO","msg":"tensorboard: tracking new log directory","rootDir":{},"logDir":"LocalOrCloudPath(LocalPath=\"C:\\\\Users\\\\akjee\\\\Documents\\\\AI\\\\RL & RLHF\\\\PPO_Project\\\\logs\\\\tensorboard\\\\PPO_1\")","namespace":""}
+{"time":"2026-07-22T11:13:05.75842+05:30","level":"INFO","msg":"tensorboard: saving file","fileLocation":"C:\\Users\\akjee\\Documents\\AI\\RL & RLHF\\PPO_Project\\logs\\tensorboard\\PPO_1\\events.out.tfevents.1784698975.WOD-LLDD.11324.0","runPath":"logs/tensorboard/PPO_1/events.out.tfevents.1784698975.WOD-LLDD.11324.0"}
+{"time":"2026-07-22T11:13:05.7696489+05:30","level":"ERROR","msg":"tensorboard: error creating symlink","target":"C:\\Users\\akjee\\Documents\\AI\\RL & RLHF\\PPO_Project\\logs\\tensorboard\\PPO_1\\events.out.tfevents.1784698975.WOD-LLDD.11324.0","symlink":"logs\\wandb\\run-20260722_111222-d7akchak\\files\\logs\\tensorboard\\PPO_1\\events.out.tfevents.1784698975.WOD-LLDD.11324.0","error":"symlink C:\\Users\\akjee\\Documents\\AI\\RL & RLHF\\PPO_Project\\logs\\tensorboard\\PPO_1\\events.out.tfevents.1784698975.WOD-LLDD.11324.0 logs\\wandb\\run-20260722_111222-d7akchak\\files\\logs\\tensorboard\\PPO_1\\events.out.tfevents.1784698975.WOD-LLDD.11324.0: A required privilege is not held by the client."}
+{"time":"2026-07-22T11:13:17.2897325+05:30","level":"INFO","msg":"filestream: sending request","total_files":2,"events_offset":4,"events_lines":2,"console_offset":4,"console_lines":11}
+{"time":"2026-07-22T11:13:18.2839962+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:13:32.2982701+05:30","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":0,"history_lines":3,"events_offset":6,"events_lines":2,"console_offset":14,"console_lines":1}
+{"time":"2026-07-22T11:13:33.0291281+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:13:35.8121756+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":409}
+{"time":"2026-07-22T11:13:35.8129018+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-07-22T11:13:40.8144348+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":491}
+{"time":"2026-07-22T11:13:40.8149964+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-07-22T11:13:46.2279335+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-07-22T11:13:46.22976+05:30","level":"INFO","msg":"filestream: sending request","total_files":4,"history_offset":3,"history_lines":25,"events_offset":8,"events_lines":2,"console_offset":14,"console_lines":46,"uploaded_len":4,"complete":true,"exit_code":0}
+{"time":"2026-07-22T11:13:47.2694551+05:30","level":"INFO","msg":"filestream: request sent","status":"200 OK"}
+{"time":"2026-07-22T11:13:47.2706782+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-07-22T11:13:47.2891144+05:30","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-07-22T11:13:47.2891144+05:30","level":"INFO","msg":"handler: closed"}
+{"time":"2026-07-22T11:13:47.2896296+05:30","level":"INFO","msg":"sender: closed"}
+{"time":"2026-07-22T11:13:47.2896296+05:30","level":"INFO","msg":"stream: all finished"}

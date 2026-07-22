@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.11.9",
+  "startedAt": "2026-07-22T08:26:11.142530Z",
+  "program": "C:\\Users\\akjee\\Documents\\AI\\RL & RLHF\\PPO_Project\\train.py",
+  "codePath": "RL & RLHF\\PPO_Project\\train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/AK-Jeevan/AI.git"
+  },
+  "root": "./logs",
+  "host": "WOD-LLDD",
+  "executable": "C:\\Users\\akjee\\Documents\\AI\\RL & RLHF\\RLHF\\Scripts\\python.exe",
+  "cpu_count": 8,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 2050",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "510815891456",
+      "used": "388210790400"
+    }
+  },
+  "memory": {
+    "total": "16802910208"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 2050",
+      "memoryTotal": "4294967296",
+      "cudaCores": 2048,
+      "architecture": "Ampere",
+      "uuid": "GPU-cb3ae640-7eec-7087-9f74-e3bb5331bca6"
+    }
+  ],
+  "cudaVersion": "13.1",
+  "writerId": "hzurec0r6wp8igpbf2r2u2d9ftqhma62"
+}
